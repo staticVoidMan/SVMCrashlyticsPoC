@@ -20,8 +20,6 @@
 	<string>1</string>
 	<key>Fabric</key>
 	<dict>
-		<key>APIKey</key>
-		<string>000312e5bfa3bfe5e3eab183a31d4ca39e02839f</string>
 		<key>Kits</key>
 		<array>
 			<dict>

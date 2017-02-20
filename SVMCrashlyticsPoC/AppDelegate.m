@@ -21,6 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    [Crashlytics startWithAPIKey:@"000312e5bfa3bfe5e3eab183a31d4ca39e02839f"];
     [Fabric with:@[[Crashlytics class]]];
     return YES;
 }
