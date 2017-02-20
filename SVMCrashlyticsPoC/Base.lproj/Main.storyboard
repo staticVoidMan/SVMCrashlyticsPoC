@@ -21,8 +21,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uth-Ba-h5n">
+                                <rect key="frame" x="8" y="341.5" width="359" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="E1o-Ox-ynv"/>
+                                </constraints>
+                                <state key="normal" title="Start with Staging Server">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnUseStagingServer_Act:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2CJ-jc-muS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQa-vU-Ugr">
+                                <rect key="frame" x="8" y="281.5" width="359" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="S7e-r2-66q"/>
+                                </constraints>
+                                <state key="normal" title="Start with Development Server">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnUseDevelopmentServer_Act:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LYz-5i-Y5i"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8n-Zx-g5e">
-                                <rect key="frame" x="8" y="311" width="359" height="44"/>
+                                <rect key="frame" x="8" y="441" width="359" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="lC6-LM-Fla"/>
@@ -37,13 +63,21 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yQa-vU-Ugr" secondAttribute="trailing" constant="8" id="5hQ-N4-SzB"/>
                             <constraint firstAttribute="trailing" secondItem="u8n-Zx-g5e" secondAttribute="trailing" constant="8" id="Cao-iP-Qa8"/>
+                            <constraint firstItem="u8n-Zx-g5e" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="130" id="MbW-Hw-9PN"/>
+                            <constraint firstItem="yQa-vU-Ugr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="Mg1-gt-25x"/>
                             <constraint firstItem="u8n-Zx-g5e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="Odn-Mm-jaf"/>
-                            <constraint firstItem="u8n-Zx-g5e" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RpJ-wz-nqs"/>
+                            <constraint firstItem="yQa-vU-Ugr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30" id="WKg-9y-Soi"/>
+                            <constraint firstAttribute="trailing" secondItem="uth-Ba-h5n" secondAttribute="trailing" constant="8" id="ZbI-ZB-JHk"/>
+                            <constraint firstItem="uth-Ba-h5n" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="30" id="plk-nG-te7"/>
+                            <constraint firstItem="uth-Ba-h5n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="v37-Fy-Z6j"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="btnCrash" destination="u8n-Zx-g5e" id="tN6-gr-WKW"/>
+                        <outlet property="btnUseDevelopmentServer" destination="yQa-vU-Ugr" id="cQt-2O-9wN"/>
+                        <outlet property="btnUseStagingServer" destination="uth-Ba-h5n" id="2nE-le-dZU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

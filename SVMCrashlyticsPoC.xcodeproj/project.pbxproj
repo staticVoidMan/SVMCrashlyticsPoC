@@ -116,7 +116,8 @@
 				F2578E7F1E4DE605006A992C /* Resources */,
 				F3D552303A80A48ABBB5FB3C /* [CP] Embed Pods Frameworks */,
 				ECBEB77BBAC8718D02A654B6 /* [CP] Copy Pods Resources */,
-				F20609FF1E4DE75D002586A1 /* Crashlytics */,
+				F20609FF1E4DE75D002586A1 /* Crashlytics - Development */,
+				F2672D0D1E4E0A3400D3FF5F /* Crashlytics - Staging */,
 			);
 			buildRules = (
 			);
@@ -204,19 +205,33 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SVMCrashlyticsPoC/Pods-SVMCrashlyticsPoC-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F20609FF1E4DE75D002586A1 /* Crashlytics */ = {
+		F20609FF1E4DE75D002586A1 /* Crashlytics - Development */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = Crashlytics;
+			name = "Crashlytics - Development";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" 000312e5bfa3bfe5e3eab183a31d4ca39e02839f 233c43df5495ca702c9e9e2325f07be10433e889209fee6a1fa8fa9a50e73ef9";
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 260ee065cd209c60043a58848a1baea7d7dec771 a0d270881ab8bb6d1d5c937d92f9b39ff6b4009749c99375e2462c9c46f72158";
+		};
+		F2672D0D1E4E0A3400D3FF5F /* Crashlytics - Staging */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Crashlytics - Staging";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" e7beea5afe223e0d99a13a48c4ec6ff00d50a018 a2406db67ca2f991862d0b14a6f5e9413944b0a0cf88efd374cf41582a34d104";
 		};
 		F3D552303A80A48ABBB5FB3C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
